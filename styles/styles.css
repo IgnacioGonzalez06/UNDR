@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tektur:wght@400..900&display=swap');
+
+/* VARIABLES */
+:root{
+    --font-ter: Instrument Serif, Sans-serif;
+    --font-sec: Josefin Sans, Sans-serif;
+    --font-ppal: Tektur, Sans-serif;
+    --background:#121311;
+    --logo:#4B5320;
+    --text:#E5E1D6;
+    --accent:#D97736;
+}
+
+/* ESTILOS BASE */
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* TEXTO PRINCIPAL*/
+.logo{
+    font-family: var(--font-ppal);
+    font-size: 5.3rem;
+    color: var(--logo);
+}
+
+.slogan{
+    font-family: var(--font-ter);
+    font-size: 3.5rem;
+}
+
+.text{
+    font-family: var(--font-sec);
+    font-size: 2rem;
+}
+
+.info{
+    font-family: var(--font-sec);
+    font-size: 1.7rem;
+}
+
+.sub-title{
+    font-family: var(--font-ter);
+    font-size: 3rem;
+    color: var(--accent);
+}
+
+/* LISTAS */
+.list{
+    font-family: var(--font-sec);
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.list a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* FOOTER Y LINKS */
+footer h3{
+    font-family: var(--font-ter);
+    font-size: 1.6rem;
+}
+
+.rrss{
+    list-style: none;
+}
+
+.logo-rrss{
+    height: 5vh;
+    width: auto;
+}
+
+/* IMAGEN */
+.model-1{
+    height: auto;
+    width: 40vw;
+    border: solid 0.3rem;
+    border-color: var(--accent);
+    border-radius: 1rem;
+}
+
+.imgs figcaption{
+    font-family: var(--font-sec);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
