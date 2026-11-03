@@ -6,9 +6,14 @@
     --font-sec: Josefin Sans, Sans-serif;
     --font-ppal: Tektur, Sans-serif;
     --background:#121311;
-    --logo:#4B5320;
+    --logo:#b0be5d;
     --text:#E5E1D6;
     --accent:#D97736;
+    --accent-hover:#d977369d;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 
 /* ESTILOS BASE */
@@ -26,7 +31,7 @@ body{
 
 .slogan{
     font-family: var(--font-ter);
-    font-size: 3.5rem;
+    font-size: 1.5rem;
 }
 
 .text{
@@ -39,10 +44,146 @@ body{
     font-size: 1.7rem;
 }
 
-.sub-title{
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #47474757;
+}
+
+.header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+/* DESCRIPCION */
+.description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description figure{
+    margin: 40px 20px;
     font-family: var(--font-ter);
-    font-size: 3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.description figure img{
+    width: 40vw;
+    height: auto;
+    border-radius: 12px;
+}
+.description div h3{
     color: var(--accent);
+    font-family: var(--font-ppal);
+    font-size: 2.6rem;
+}
+.description div{
+    margin:40px 20px;
+}
+
+/* PROYECTS */
+
+.proyects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.proyects h2{
+    font-family: var(--font-ppal);
+    font-size: 2.2rem;
+    color: var(--accent);
+    align-self: center;
+    margin-top: 20px;
+}
+
+.proyects .list{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item{
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item li{
+}
+
+.item img{
+    width: 206px;
+    height: auto;
+}
+
+/* CARDS */
+.card-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-article h2{
+    font-family: var(--font-sec);
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 25px;
+    text-decoration: underline;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.card{
+    background-color: #47474757;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+.card figure img{
+    width: 23vw;
+    height: auto;
+}
+
+.card p{
+    font-family: var(--font-ter);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom:10px ;
+}
+
+.card-boton{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--accent);
+    color: var(--text);
+    font-family: var(--font-sec);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-boton:hover{
+    background-color: var(--accent-hover);
+    text-decoration: underline;
 }
 
 /* LISTAS */
@@ -50,6 +191,9 @@ body{
     font-family: var(--font-sec);
     font-size: 1.5rem;
     list-style: none;
+    display: flex;
+    margin-right: 20px;
+    gap: 20px;
 }
 
 .list a{
@@ -58,13 +202,31 @@ body{
 }
 
 /* FOOTER Y LINKS */
-footer h3{
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-top:15px ;
+    background-color: #47474757;
+}
+
+.footer h3{
     font-family: var(--font-ter);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .rrss{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rrss li{
+    margin: 5px 15px;
+    padding-bottom: 10px;
 }
 
 .logo-rrss{
