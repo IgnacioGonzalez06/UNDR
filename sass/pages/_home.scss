@@ -1,0 +1,63 @@
+@use "../utilities/variables" as v;
+
+
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .cont-1{
+        margin-top: 30px;
+        p{
+            text-align: center;
+        }
+        h3{
+            color: v.$accent;
+            font-family: v.$font-ppal;
+            font-size: 2.6rem;
+            text-align: center;
+        }
+    }
+    .carousel{
+        width: 50vw;
+        height: auto;
+        .carousel-inner{
+            border-radius:20px;
+        }
+        .carousel-item{
+            img {
+                border-radius:20px;
+            }
+        }
+    }
+}
+
+.card-article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    .cards{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin: 50px 0px 50px 0px;
+        .card{
+            background-color: v.$background-sec;
+            color: v.$text;
+            font-size: 1.3rem;
+            .card-body{
+                .btn-outline-info{
+                    border: solid 2px v.$logo;
+                    border-radius: 12px;
+                    color: v.$logo;
+                    &:hover{
+                        background-color: v.$logo;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

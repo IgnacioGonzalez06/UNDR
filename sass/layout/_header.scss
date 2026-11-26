@@ -1,0 +1,54 @@
+@use "../utilities/variables" as v;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: v.$background-sec;
+    align-items: center;
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 10px 20px;
+        
+    }
+
+    .logo {
+        a{
+        font-family: v.$font-ppal;
+        font-size: 5.3rem;
+        color: v.$logo;
+        font-weight: 700;
+        text-decoration: none;
+        }
+        
+    }
+
+    .slogan {
+        font-family: v.$font-ter;
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    .navbar {
+        .container-fluid{
+            justify-content: end;
+            text-align: end;
+            padding: 20px;
+        }
+        .navbar-toggler {
+            background-color: v.$text;
+        }
+
+        .nav-link {
+            color: v.$text;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

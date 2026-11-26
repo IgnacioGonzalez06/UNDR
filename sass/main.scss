@@ -1,0 +1,13 @@
+//sass --watch sass/main.scss styles/styles.css
+// PARTIALS
+
+@use "./utilities/reset";
+
+@use "./layout/header";
+@use "./layout/footer";
+
+@use "./pages/home";
+@use "./pages/faq";
+@use "./pages/contacto";
+@use "./pages/proyectos";
+@use "./pages/sobre-mi";

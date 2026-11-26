@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNDR Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <header class="header">
-        <div>
-            <h1 class="logo ">UNDR</h1>
+        <div class="principal">
+            <h1 class="logo"><a class="logo" href="index.html">UNDR</a></h1>
             <h2 class="slogan">Una Prenda Para Cada Ocación</h2>
         </div>
-        <nav class="navbar">
-            <ul class="list">
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/sobre-mi.html">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="./pages/proyectos.html">Lanzamientos</a>
-                </li>
-                <li>
-                    <a href="./pages/faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-mi.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/proyectos.html">Lanzameintos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -44,34 +51,53 @@
                     calles, la música alternativa y el arte independiente.
                 </p>
             </div>
-            <figure>
-                <img class="img-1" src="./assets/model-1.jfif" alt="modelos de UNDR">
-                <figcaption>Modelos de UNDR vistiendo su ultimo lanzamiento</figcaption>
-            </figure>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/undr-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/undr-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/undr-3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </article>
         <article class="card-article">
             <h2>Nuevos Productos</h2>
             <section class="cards">
-                <div class="card">
-                    <figure>
-                        <img src="./assets/remera-cero.png" alt="remera 1">
-                    </figure>
-                    <p>Remera de Cero*</p>
-                    <button class="card-boton">VER M&Aacute;S</button>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/remera-cero.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p>Remera Cero*</p>
+                        <button type="button" class="btn btn-outline-info">Ver M&aacute;s</button>
+                    </div>
                 </div>
-                <div class="card">
-                    <figure>
-                        <img src="./assets/remera-dolly.png" alt="remera 2">
-                    </figure>
-                    <p>Remera de Dolly Flako</p>
-                    <button class="card-boton">VER M&Aacute;S</button>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/remera-dolly.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p>Remera Doly</p>
+                        <button type="button" class="btn btn-outline-info">Ver M&aacute;s</button>
+                    </div>
                 </div>
-                <div class="card">
-                    <figure>
-                        <img src="./assets/remera-zell.png" alt="remera 3">
-                    </figure>
-                    <p>Remera de Zell</p>
-                    <button class="card-boton">VER M&Aacute;S</button>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/remera-zell.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p>Remera Zell</p>
+                        <button type="button" class="btn btn-outline-info">Ver M&aacute;s</button>
+                    </div>
                 </div>
             </section>
         </article>
@@ -101,6 +127,9 @@
             </li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,66 @@
+@use "../utilities/variables" as v;
+
+main {
+    .sub-title {
+        font-family: v.$font-ppal;
+        font-size: 2.2rem;
+        color: v.$accent;
+        text-align: center;
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "ubi payment "
+            "envio envio"
+        ;
+        gap: 40px;
+
+        .payment {
+            grid-area: payment;
+        }
+
+        .ubi {
+            grid-area: ubi;
+        }
+
+        .envio {
+            grid-area: envio;
+            img{
+                margin-bottom: 50px;
+            }
+        }
+
+        .ubi,
+        .payment {
+            margin: 30px 20px 0px 20px;
+        }
+
+        div {
+            font-family: v.$font-sec;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            .quest {
+                color: var(--logo);
+                font-size: 2.3rem;
+            }
+
+            .grid-imagen {
+                width: 30vw;
+                height: auto;
+                margin-top: 25px;
+                background-color: #47474757;
+                border-radius: 20px;
+            }
+        }
+    }
+}

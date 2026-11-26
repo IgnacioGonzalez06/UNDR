@@ -1,0 +1,33 @@
+@use "../utilities/variables" as v;
+
+.proyects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .sub-title {
+        font-family: v.$font-ppal;
+        font-size: 2.2rem;
+        color: v.$accent;
+        text-align: center;
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .grid-img {
+            img {
+                width: 20vw;
+                height: auto;
+                justify-self: center;
+                align-self: center;
+                margin: 30px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
